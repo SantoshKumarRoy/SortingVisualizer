@@ -3,9 +3,9 @@ generateArray();
 function swap(el1, el2) {
    
     
-    let temp = el1.style.height;
-    el1.style.height = el2.style.height;
-    el2.style.height = temp;
+    let temp = parseInt(el1.innerHTML);
+    el1.innerHTML = el2.innerHTML;
+    el2.innerHTML = temp;
     
 }
 function deleteChild() {
@@ -20,6 +20,7 @@ function generateArray()
 	var bar=new Array(50);
 	for (let i = 0; i < BarNO; i++) 
 	{
+
 		arr[i]=Math.floor(Math.random() * 250) + 1;
 	}
 	 console.log(arr);
@@ -32,9 +33,7 @@ function generateArray()
             bar[j].classList.add('bar');
             bar[j].classList.add('flex-item');
 			bar[j].classList.add('barNo${j}');
-			bar[j].style.height =`${arr[j]}`;
-		
-			//bar.style.height = "50";
+			bar[j].innerHTML=`${arr[j]}`;
 			element.appendChild(bar[j]);
 	
 		
@@ -46,7 +45,7 @@ function waitforme(milisec) {
         setTimeout(() => { resolve('') }, milisec); 
     }) 
 }
-let timeSpeed=30;
+let timeSpeed=310;
 var slider = document.getElementById("speed_input");
 slider.oninput = function() {
   timeSpeed =320 -  (this.value);
