@@ -1,40 +1,17 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<h class="headline" >SORTING VISUALIZER</h>
-</head>
-
-<header>
-<nav>
-    <br>
-    <div>
-    <div style="color:aliceblue" >
-        <div style="color:rgb(122, 188, 247)"> Numer Of Bar
-        <input type="number" id="BarSize" name="BarNo" value="10" >
-       
-        <span id="speed" style="color: blueviolet;">Speed
-            <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
-        </span>
-    </div></div>
-<button  type="button" id="button1" class="newArray" onClick="generateArray()">Generate Array</button>
-    
-
-    </div>
-<div class="box1">
-
-<button  type="button" id="button2" onClick="bubble()">Bubble Sort</button>
-<button  type="button" id="button3" onClick="Insertion()">Insertion Sort</button>
-<button  type="button" id="button4" onClick="selection()">Selection Sort</button>
-<button  type="button" id="button5" onclick="mergeMain()">Merge Sort</button>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <h class="headline" >SORTING VISUALIZER</h>
+    <div class="homeHeader" style="background:rgb(151, 215, 245)">
+<h1>Here you will learn and visualize how actually a sorting allgorithm works. How it sort the Array.</h1>
+<h1>By graph option to visualize with the help of graph And By Array option to visualize with Array</h1>
 </div>
-</nav>
-</header>
+</head>
 <body>
-<div id="bars" class='flex-container'></div>
- <script src="main.js"></script>
- <script src="bubbleSort.js"></script>
- <script src="Insertion.js"></script>
- <script src="selection.js"></script>
- <script src="merge.js"></script>
+        <div class="homeButton">
+        <button class="home" onclick="location.href='Graph.html';">By Graph</button>
+        <button  class="home" onclick="location.href='ArrayFile.html';">By Array</button>
+        </div>
 </body>
 </html>
