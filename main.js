@@ -45,8 +45,8 @@ function waitforme(milisec) {
         setTimeout(() => { resolve('') }, milisec); 
     }) 
 }
-let timeSpeed=310;
+let timeSpeed=200;
 var slider = document.getElementById("speed_input");
 slider.oninput = function() {
-  timeSpeed =320 -  (this.value);
+  timeSpeed =200 -  (this.value);
 }
